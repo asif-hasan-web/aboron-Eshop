@@ -14,7 +14,7 @@ const showProducts = (products) => {
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
       <div>
-    <img class="product-image" src=${image}></img>
+    <img class="product-image" src=${product.image}></img>
       </div>
       <h3>${product.title}</h3>
       <p>Category: ${product.category}</p>
@@ -26,10 +26,10 @@ const showProducts = (products) => {
   }
 };
 let count = 0;
-const addToCart = (id, price) => {
+const addToCart = (id, value) => {
   count = count + 1;
-  updatePrice("price", price);
-
+  updatePrice("price", value);
+  
   updateTaxAndCharge();
   document.getElementById("total-Products").innerText = count;
 };
