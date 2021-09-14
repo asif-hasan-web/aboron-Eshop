@@ -21,12 +21,14 @@ const showProducts = (products) => {
       <p class="text-danger">Rating: ${product.rating.rate}</p>
       <p class="text-danger">${product.rating.count} Peoples Rated This</p>
       <h2>Price: $ ${product.price}</h2>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button></div>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-warning">add to cart</button>
+      <button id="details-btn" class="btn btn-info">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
 };
+
+// onclick to addToCart funtion here 
 let count = 0;
 const addToCart = ( id , value) => {
   count = count + 1;

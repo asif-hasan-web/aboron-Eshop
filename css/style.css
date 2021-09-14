@@ -2,6 +2,8 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+
+/* //input field */
 .search-field {
   background: #fafafa;
   display: flex;
@@ -12,7 +14,7 @@ body {
 
 .search-box {
   position: relative;
-  border: 2px solid #0a0a0a;
+  border: 2px solid #0dcaf0;
   border-radius: 4px 0px 0px 4px;
 
 }
@@ -30,7 +32,7 @@ body {
   top: 0;
   bottom: 0;
   right: 0;
-  background: #333;
+  background: #0dcaf0;
   color: white;
   padding: 0 15px;
   letter-spacing: 1.2px;
@@ -38,9 +40,12 @@ body {
   cursor: pointer;
 }
 
+/* background-color */
 .bg-gray{
   background-color: #f7f8fa;
 }
+
+/* cart design  */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
